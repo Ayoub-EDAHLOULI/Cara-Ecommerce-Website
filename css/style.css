@@ -133,3 +133,57 @@ button.white{
 #navbar li .head-card{
     font-size: 1.3rem;
 }
+
+
+/*******---Hero Section Style---*******/
+
+#img-slider {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#img-slider .slide img{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    object-position: top right;
+}
+
+#img-slider .slide .info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.select-none {
+    user-select: none;
+}
+
+#img-slider .slide .info h4{
+    padding-bottom: 15px;
+}
+
+#img-slider .slide .info h1{
+    color: var(--primary-color);
+}
+
+#img-slider .slide .info button{
+    background: url('../img/button.png');
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    font-size: 15px;
+    font-weight: 700;
+
+}
