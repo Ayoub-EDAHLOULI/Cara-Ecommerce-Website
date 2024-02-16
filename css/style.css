@@ -79,3 +79,57 @@ button.white{
     outline: none;
     transition: all 0.3s ease;
 }
+
+/*******---Header Style---*******/
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    position: sticky;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}    
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li .active{
+    color: var(--primary-color);
+}
+
+#navbar li a:hover::after,
+#navbar li .active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -4px;
+    left: 21px;
+}
+
+#navbar li .head-card{
+    font-size: 1.3rem;
+}
